@@ -1,0 +1,28 @@
+{
+	"name": "opensecrets-api",
+	"version": "0.0.1",
+	"description": "opensecrets API client for node.js",
+	"keywords": [
+    "opensecrets"
+  ],
+  "author": "Ameen Soleimani (https://github.com/ameen3)",
+  "license": "MIT",
+  "dependencies": {
+    "querystring": "0.2.x",
+    "request": "2.21.x",
+    "nconf": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ameen3/opensecrets"
+  },
+  "main": "main.js",
+  "engines": {
+    "node": "~0.10"
+  },
+  "bugs": {
+    "url": "https://github.com/ameen3/opensecrets/issues",
+    "email": "ameen.sol@gmail.com"
+  },
+  "readmeFilename": "README.md"
+}
