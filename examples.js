@@ -17,29 +17,29 @@ client.candSummary('N00007360', function(err, json) {
 client.candContrib('N00007360', function(err, json) {
   if (err) throw err;
   console.log('--------------Candidate Contributions------------');
-  console.log(json['']);
+  console.log(json['contributor']);
 });
 
 client.candIndustry('N00007360', function(err, json) {
   if (err) throw err;
-  console.log('-----------------Candidate Industry--------------');
-  console.log(json);
+  console.log('-----------------Candidate Industries--------------');
+  console.log(json['industry']);
 });
 
 client.candIndByInd('N00007360', 'K02', function(err, json) {
   if (err) throw err;
   console.log('----------Candidate Industry By Industry---------');
-  console.log(json);
+  console.log(json['@attributes']);
 });
 
 client.candSector('N00007360', function(err, json) {
   if (err) throw err;
   console.log('-----------------Candidate Sector----------------');
-  console.log(json);
+  console.log(json['sector']);
 });
 
 client.congCmteIndus('HARM', '112', 'F10', function(err, json) {
   if (err) throw err;
   console.log('--------------Congressional Committees-----------');
-  console.log(json);
+  console.log(json['member']);
 });
