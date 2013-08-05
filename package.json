@@ -1,5 +1,5 @@
 {
-	"name": "opensecrets-api",
+	"name": "opensecrets",
 	"version": "0.0.1",
 	"description": "opensecrets API client for node.js",
 	"keywords": [
