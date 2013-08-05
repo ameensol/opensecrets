@@ -1,4 +1,4 @@
-var OpenSecretsClient = require('./main.js');
+var OpenSecretsClient = require('./');
 
 // Load apiKey from config.json - you can replace this code and manually set your API key here
 var nconf = require('nconf');
