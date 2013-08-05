@@ -5,15 +5,15 @@ function OpenSecretsClient(apiKey){
   var self = this;
   self.apiKey = apiKey;
 
-	function makeRequest(func, args, dataTarget, callback){
-		if (!self.apiKey) {
-			throw new Error('Must provide apiKey.');
-		}
+  function makeRequest(func, args, dataTarget, callback){
+    if (!self.apiKey) {
+      throw new Error('Must provide apiKey.');
+    }
 
     var options = Options(func, args, self.apiKey);
 
-		return executeRequest(options, dataTarget, callback);
-	}
+    return executeRequest(options, dataTarget, callback);
+  }
 
   function executeRequest(options, dataTarget, callback){
     request(options, function (err, res, body) {
@@ -29,9 +29,9 @@ function OpenSecretsClient(apiKey){
     // create the options for the given request
 
     var params = querystring.stringify(args);
-    
+
     return {
-      url: 'http://api.opensecrets.org/?method=' + func + 
+      url: 'http://api.opensecrets.org/?method=' + func +
         '&output=json&apikey=' + apiKey + '&' + params,
       agent: false,
       headers: {
