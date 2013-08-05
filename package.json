@@ -18,7 +18,7 @@
     "type": "git",
     "url": "https://github.com/ameen3/opensecrets"
   },
-  "main": "main.js",
+  "main": "index.js",
   "engines": {
     "node": "~0.10"
   },
