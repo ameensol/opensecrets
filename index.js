@@ -4,7 +4,7 @@ var querystring = require('querystring');
 var OpenSecrets = module.exports = function (apiKey){
   if(!this instanceof OpenSecrets) { return new OpenSecrets(apiKey) }
 
-  if (!apiKey) { throw new Error('Must providea apiKey') }
+  if (!apiKey) { throw new Error('Must provide apiKey') }
 
   this.apiKey = apiKey
 
